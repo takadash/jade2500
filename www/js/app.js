@@ -3,7 +3,7 @@
 
 //var ncmb = new NCMB(APPLICATIONKEY, CLIENTKEY);
 //var TestData = ncmb.DataStore('example');
-
+// 改行できるかの実験
 var map;
 var stampclick = [];
 var marker_g;
