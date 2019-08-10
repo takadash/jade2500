@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 600px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+        <!--<meta name="viewport" content="width=device-width, user-scalable=no">-->
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">-->
+        <script src="components/loader.js"></script>
+        <link rel="stylesheet" href="components/loader.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/cssua.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/taihei.js"></script>
+        <script src="js/kabuki.js"></script>
+        <script src="js/kiyochika.js"></script>
+        <script src="js/kyoden.js"></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXueT8O-UOJmfh2M-1Xh1IbfKWNXv-coU&callback=initMap">
+    </script>
+        <title>お問い合わせフォーム</title>
+        
+    </head>
+
+    <body>
+      <div id="map"></div>
+      <button onclick="getMyPlace()">現在位置を取得</button>
+      <div id="result"></div>
+      <!--
+      <button onclick="getstamp()">スタンプ</button>
+      -->
+      <p>近世</p>
+      <label><input type="checkbox" name="scb3" id="cb1"
+              onclick="kabuki()">南北歌舞伎</label><img src="https://maps.google.com/mapfiles/ms/icons/green-dot.png" width="20" height="20" border="0" /><br>
+      <label><input type="checkbox" name="scb3" id="cb2"
+              onclick="kyoden()">京伝黄表紙</label><img src="https://maps.google.com/mapfiles/ms/icons/yellow-dot.png" width="20" height="20" border="0" /><br>
+      <!-- <label><input type="checkbox" name="scb3" id="cb3"
+              onclick="edo()">江戸名所図会</label><br> -->
+      <label><input type="checkbox" name="scb3" id="cb4"
+              onclick="taihei()">泰平纏一覧</label><img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png" width="20" height="20" border="0" /><br>
+      
+      <p>近代</p>
+      <label><input type="checkbox" name="scb3" id="cb5"
+              onclick="kiyochika()">小林清親版画</label><img src="https://maps.google.com/mapfiles/ms/icons/blue-dot.png" width="20" height="20" border="0" /><br>
+<!--
+      <p>現代</p>
+      <label><input type="checkbox" name="scb3" id="cb6"
+              onclick="pintate()">銀座写真</label><br>
+      <label><input type="checkbox" name="scb3" id="cb7"
+              onclick="pintate()">秋葉原調査</label><br>
+      <label><input type="checkbox" name="scb3" id="cb8"
+              onclick="pintate()">東京落語</label><br>
+-->      
+    
+    </body>
+</html>
+
